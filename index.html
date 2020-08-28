@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    
-    <script src="assets/js/main.js"></script>
+    <div class="header">
+        <h1 class="logo">Conway's Game of Life</h1>
+    </div>
+    <div class="main-container">
+        <div class="simulation">
+            <canvas id="canvas"> </canvas>
+        </div>
+        <div class="side-menu">
+            <h2>Configuration</h2>
+            <div class="settings">
+                <div>Speed</div>
+                <input type="range" min="1" max="25" value="5" id="speed">
+                <div>
+                    <button onclick="initialise()">Start</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
